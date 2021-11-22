@@ -10,10 +10,6 @@
 #include <ranges>
 #include <algorithm>
 
-using namespace std;
-
-
-
 
 /*Task 1
 Создайте структуру Person с 3 полями: фамилия, имя, отчество.
@@ -352,6 +348,8 @@ std::ostream& operator<< (std::ostream& out, PhoneBook& book)
 
 int main()
 {
+	std::cout << "Task DZ_1_HardMoments\n" << std::endl;
+
 	std::ifstream file("PhoneBook.txt"); // path to the file PhoneBook.txt
 	PhoneBook book(file);
 	file.close();
@@ -379,12 +377,12 @@ int main()
 	};
 
 	// calls of lambdas
-	print_phone_number("Evgen");
-	print_phone_number("Danil");
-	print_phone_number("Dmitriy");
-	print_phone_number("Vladimir");
-	print_phone_number("POP");
-	print_phone_number("VALORANTER");
+	print_phone_number("Jony");
+	print_phone_number("Niki");
+	print_phone_number("Rocky");
+	print_phone_number("Vlad");
+	print_phone_number("RAP");
+	print_phone_number("Mikros");
 
 	std::cout << "\n--------ChangePhoneNumber--------\n" << std::endl;
 	book.ChangePhoneNumber(Person{ "Kotov", "Vasilii", "Eliseevich" }, PhoneNumber{ 7, 123, "15344458", std::nullopt });
